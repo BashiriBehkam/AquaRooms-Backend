@@ -29,6 +29,11 @@ const OrderSchema = new mongoose.Schema({
     type: Date,
     default: Date.now
   },
+  foodservices: {
+    type: Boolean,
+    default: false
+  }
+  ,
   complete: {
     type: Boolean,
     default: false
