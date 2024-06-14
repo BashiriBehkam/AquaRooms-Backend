@@ -38,6 +38,11 @@ const OrderSchema = new mongoose.Schema({
     type: Boolean,
     default: false
   }
+  ,received: {
+    type: String,
+    default: 'Qebul Edilmeyib'
+  }
+
 });
 
 const Order = mongoose.model("Order", OrderSchema);
